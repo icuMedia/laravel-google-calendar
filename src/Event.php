@@ -213,13 +213,14 @@ class Event
     protected function getFieldName(string $name): string
     {
         return [
-               'name' => 'summary',
-               'description' => 'description',
-               'startDate' => 'start.date',
-               'endDate' => 'end.date',
-               'startDateTime' => 'start.dateTime',
-               'endDateTime' => 'end.dateTime',
-               'color' => 'colorId',
-           ][$name] ?? $name;
+           'name' => 'summary',
+           'description' => 'description',
+           'startDate' => 'start.date',
+           'endDate' => 'end.date',
+           'startDateTime' => 'start.dateTime',
+           'endDateTime' => 'end.dateTime',
+           'color' => 'colorId',
+           'description' => 'description',
+       ][$name] ?? $name;
     }
 }
