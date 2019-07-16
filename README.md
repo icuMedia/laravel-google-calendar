@@ -18,6 +18,8 @@ $event = new Event;
 $event->name = 'A new event';
 $event->startDateTime = Carbon\Carbon::now();
 $event->endDateTime = Carbon\Carbon::now()->addHour();
+$event->color = 11;
+$event->description = 'This is a description';
 $event->addAttendee(['email' => 'youremail@gmail.com']);
 $event->addAttendee(['email' => 'anotherEmail@gmail.com']);
 
@@ -38,6 +40,8 @@ Event::create([
    'name' => 'A new event',
    'startDateTime' => Carbon\Carbon::now(),
    'endDateTime' => Carbon\Carbon::now()->addHour(),
+   'color' => 11,
+   'description' => 'This is a description',
 ]);
 
 // delete an event
@@ -160,6 +164,8 @@ $event = new Event;
 $event->name = 'A new event';
 $event->startDateTime = Carbon\Carbon::now();
 $event->endDateTime = Carbon\Carbon::now()->addHour();
+$event->color = 11;
+$event->description = 'This is a description';
 
 $event->save();
 ```
@@ -171,6 +177,8 @@ Event::create([
    'name' => 'A new event',
    'startDateTime' => Carbon\Carbon::now(),
    'endDateTime' => Carbon\Carbon::now()->addHour(),
+   'color' => 11,
+   'description' => 'This is a description',
 ]);
 ```
 
