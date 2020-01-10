@@ -55,7 +55,7 @@ Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview 
 You can install the package via composer:
 
 ```bash
-composer require spatie/laravel-google-calendar
+composer require icuMedia/laravel-google-calendar
 ```
 
 Next up the service provider must be registered:
